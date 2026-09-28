@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.stApp {
+    background: #0b0c12;
+    color: #f5f5f7;
+}
+
+.block-container {
+    max-width: 1350px;
+    padding: 45px 40px 60px;
+}
+
+/* Hide Streamlit branding */
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    background: transparent !important;
+}
+
+/* Headings */
+h1 {
+    color: #ffffff !important;
+    font-size: 42px !important;
+    font-weight: 800 !important;
+    letter-spacing: -1.5px;
+}
+
+h2 {
+    color: #ffffff !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+}
+
+h3 {
+    color: #ffffff !important;
+    font-size: 19px !important;
+    font-weight: 600 !important;
+}
+
+p {
+    color: #9da2b3;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: #0e1018;
+    border-right: 1px solid #1d202b;
+}
+
+[data-testid="stSidebar"] > div:first-child {
+    padding: 25px 16px;
+}
+
+[data-testid="stSidebar"] .stButton button {
+    width: 100%;
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    border-radius: 12px !important;
+    color: #9298aa !important;
+    text-align: left !important;
+    transition: 0.2s ease;
+}
+
+[data-testid="stSidebar"] .stButton button:hover {
+    background: #181a24 !important;
+    border-color: #292d3a !important;
+    color: #ffffff !important;
+}
+
+/* Buttons */
+.stButton button {
+    background: #171923 !important;
+    color: #eeeeF2 !important;
+    border: 1px solid #292d3a !important;
+    border-radius: 11px !important;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.stButton button:hover {
+    background: #222532 !important;
+    border-color: #474c5e !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+}
+
+/* Inputs */
+.stTextInput input,
+.stNumberInput input,
+.stTextArea textarea {
+    background: #11131c !important;
+    color: #ffffff !important;
+    border: 1px solid #292d3a !important;
+    border-radius: 11px !important;
+}
+
+.stTextInput input:focus,
+.stNumberInput input:focus,
+.stTextArea textarea:focus {
+    border-color: #8b82ff !important;
+    box-shadow: 0 0 0 1px #8b82ff !important;
+}
+
+/* Cards */
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background: #11131c;
+    border: 1px solid #222631;
+    border-radius: 17px;
+    padding: 10px;
+    transition: 0.25s ease;
+}
+
+[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    background: #141722;
+    border-color: #343949;
+    transform: translateY(-2px);
+}
+
+/* Metrics */
+[data-testid="stMetric"] {
+    background: #11131c;
+    border: 1px solid #252936;
+    border-radius: 16px;
+    padding: 18px;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #818798 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+/* Divider */
+hr {
+    border: none !important;
+    border-top: 1px solid #20232e !important;
+}
+
+/* Alerts */
+[data-testid="stAlert"] {
+    background: #141722;
+    border: 1px solid #292e3c;
+    border-radius: 12px;
+}
+
+/* Captions */
+[data-testid="stCaptionContainer"] {
+    color: #777d90 !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0b0c12;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #292d39;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3d4251;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .block-container {
+        padding: 25px 18px 40px;
+    }
+
+    h1 {
+        font-size: 32px !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+}
